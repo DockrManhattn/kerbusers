@@ -36,7 +36,7 @@ else:
 
 # Add shell alias for kerbusers
 shell = os.environ.get("SHELL", "").lower()
-alias_command = f'alias kerbusers="python3 {kerbusers_dest}"'
+alias_command = 'alias kerbusers="python3 $HOME/.local/bin/kerbusers.py"'
 
 config_file = None
 if "zsh" in shell:
