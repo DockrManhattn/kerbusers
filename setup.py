@@ -46,7 +46,7 @@ elif "bash" in shell:
 
 if config_file:
     with open(config_file, "a") as shell_rc:
-        shell_rc.write(alias_command)
+        shell_rc.write("\n" + alias_command + "\n")
     print(f"Alias for kerbusers added to {config_file}.")
     print(f"To use the alias immediately, run:\n  source {config_file}")
 else:
